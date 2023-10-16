@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery-exam2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Viet the script-->
+    <script>
+        // Template cho DOM
+        $(document).ready(function(){
+            // Your jQuery script here
+        });
+    </script>
+    <script>
+        <!-- Example -->
+    $(document).ready(function(){
+        //innerHTML
+    $('#hello').html('Hello, world!');
+    $('#hello').addClass('green');
+    $('#p1').addClass('green');
+    // $('.red').each
+    //Event
+    $('#hello').click(function(){
+        $(this).html('Xin chao');
+        return false;
+    });
+    
+    });    
+    </script>
+    <style>
+       .red{color: red;}
+       .green{color: green;}
+    </style>
+    <h1 id="hello">hi</h1>
+    <p class="red">Red line!</p>
+    <p id="p1">P tag demo</p>
+</body>
+</html>
